@@ -1,38 +1,36 @@
 <?php
-
 class Producto{
+    //Definir los atributos.
     private $idProducto;
     private $idCategoria;
     private $nombre;
     private $precio;
     private $estado;
 
+    //Definir el constructor
     public function __construct(){
 
     }
 
-    public function setidProducto($idProducto){
-        $this->idProducto = $idProducto; 
+    public function setidProducto($e_idProducto){
+        $this->idProducto = $e_idProducto;
     }
 
-    public function setidCategoria($idCategoria){
-        $this->idCategoria = $idCategoria; 
+    public function setidCategoria($e_idCategoria){
+        $this->idCategoria = $e_idCategoria;
     }
 
-    public function setnombre($nombre){
-        $this->nombre = $nombre; 
+    public function setnombre($e_nombre){
+        $this->nombre = $e_nombre;
     }
 
-    public function setprecio($precio){
-        $this->precio = $precio; 
+    public function setprecio($e_precio){
+        $this->precio = $e_precio;
     }
 
-    public function setestado($estado){
-        $this->estado = $estado; 
+    public function setestado($e_estado){
+        $this->estado = $e_estado;
     }
-
-
-
 
     public function getidProducto(){
         return $this->idProducto;
@@ -53,7 +51,5 @@ class Producto{
     public function getestado(){
         return $this->estado;
     }
-
 }
-
 ?>

@@ -10,7 +10,7 @@ class Conexion{
 
     public static function conectar(){
         //Verificar errores
-        $pdo_options[PDO::ATTR_ERRMODE]=PDO::ERRMODE_EXCEPTION;
+        $pdo_options[PDO::ATTR_ERRMODE]=PDO::ERRMODE_EXCEPTION;//Capturar errore
         self::$conexion = new PDO('mysql:host=localhost;dbname=crud_2395779','root','',$pdo_options);
         return self::$conexion;
     }
